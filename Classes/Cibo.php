@@ -15,8 +15,6 @@ class Cibo extends Prodotto
         $this->ingredienti = $ingredienti;
     }
 
-
-
     /**
      * Get the value of peso
      */
