@@ -53,4 +53,28 @@ class Prodotto
 
         return $this;
     }
+
+    /**
+     * Get the value of numeroProdotto
+     */
+    public function getNumeroProdotto()
+    {
+        return $this->numeroProdotto;
+    }
+
+    /**
+     * Get the value of nome
+     */
+    public function getNome()
+    {
+        return $this->nome;
+    }
+
+    /**
+     * Get the value of animale
+     */
+    public function getAnimale()
+    {
+        return $this->animale;
+    }
 }
