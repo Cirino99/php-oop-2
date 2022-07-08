@@ -9,10 +9,6 @@ class Carrello
         $this->utente = $utente;
     }
 
-    public function __destruct()
-    {
-    }
-
     /**
      * Get the value of utente
      */
@@ -41,7 +37,9 @@ class Carrello
             foreach ($this->prodotti as $item) {
                 $prezzoTot += $item['prodotto']->getPrezzo();
                 $item['prodotto']->setQuantita($item['prodotto']->getQuantita() - $item['quantità']);
-                $this->__destruct();
+            }
+            if ($this->utente->getRegistrato()) {
+                $prezzoTot = $prezzoTot * 80 / 100;
             }
             echo "<br>pagamento totale di $prezzoTot €";
         } else {

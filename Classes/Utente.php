@@ -33,4 +33,12 @@ class Utente
 
         return $this;
     }
+
+    /**
+     * Get the value of registrato
+     */
+    public function getRegistrato()
+    {
+        return $this->registrato;
+    }
 }
