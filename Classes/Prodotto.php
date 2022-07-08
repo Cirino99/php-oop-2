@@ -4,7 +4,7 @@ class Prodotto
     protected string $numeroProdotto;
     protected float $prezzo;
     protected string $nome;
-    protected int $pezzi;
+    protected int $quantita;
     protected string $animale;
 
     protected function  __construct(string $numeroProdotto, string $nome, string $animale)
@@ -35,21 +35,21 @@ class Prodotto
     }
 
     /**
-     * Get the value of pezzi
+     * Get the value of quantita
      */
-    public function getPezzi()
+    public function getQuantita()
     {
-        return $this->pezzi;
+        return $this->quantita;
     }
 
     /**
-     * Set the value of pezzi
+     * Set the value of quantita
      *
      * @return  self
      */
-    public function setPezzi($pezzi)
+    public function setQuantita($quantita)
     {
-        $this->pezzi = $pezzi;
+        $this->quantita = $quantita;
 
         return $this;
     }

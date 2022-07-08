@@ -5,11 +5,13 @@ class Utente
     protected string $cognome;
     protected int $eta;
     private object $cartaCredito;
+    private bool $registrato;
 
-    public function  __construct(string $nome, string $cognome)
+    public function  __construct(string $nome, string $cognome, bool $registrato)
     {
         $this->nome = $nome;
         $this->cognome = $cognome;
+        $this->registrato = $registrato;
     }
 
     /**
